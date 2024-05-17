@@ -4,11 +4,8 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
   }
-  
 
-   
   body::-webkit-scrollbar {
     width: 12px;              
   }
@@ -58,11 +55,10 @@ header {
     background-color: #f1f0f6; 
     height: 101px;
     display: flex;
-
     height: 12%;
     box-shadow:0px 10px 5px #acacac;
     margin: 0 auto;
-     
+    position: relative; 
 }
 
 .header img {
@@ -148,55 +144,66 @@ header {
     font-size: 15px;
 }
 
-.box {
+.foto1 {
+    position: relative;
     display: flex;
-    height: 400px;
-    left: 100%;
+    height: 200px;
+    z-index: -1 ;
+    left: 0;
     background-color: #FFFBD8;
-   margin-top: 3%;
-   color: #91C041;
-   font-size: 40px;
 }
 
-.separa {
-    display: flex;
-    height: 500px;
-    left: 100%;
+.h{
+    font-size: 30px;
+    color: #91C041;
+    padding-left: 30%;
+    padding-top: 100px;
+}
+
+.capitulos {
+    height: 400px;
+    width: 250px;
     background-color: white;
-}
-.caixa1 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
-    border-radius: 10px;
-    margin: 4%;
     margin-left: 10%;
-}
-
-.caixa2 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    position: relative;
+    z-index: 1;
+    top: -100px;
     border-radius: 10px;
-    margin-left: 110%;
+    font-size: 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
+    text-align: center;
 }
 
-.caixa3 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+.foto2 {
+    position: relative;
+    display: flex;
+    height: 350px;
+    width: 60%;
+    background-color: #FFFBD8;
+    z-index: 1;
+    top: -450px;
+    left: 30%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
     border-radius: 10px;
-    margin-left: 110%;
 }
 
-.caixa4 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
-    border-radius: 10px;
-    margin-left: 110%;
+
+.texto h3  {
+    width: 50%;
+    display: flex;
+    position: relative;
+    padding-left:  40%;
+    top: -400px;
+    font-size: 24px;
 }
 
+.texto h1 {
+    font-size: 40px;
+    display: flex;
+    position: relative;
+    padding-left:  40%;
+    top: -400px;
+}
 .rodape {
     height: 100px;
     width: 100%;
