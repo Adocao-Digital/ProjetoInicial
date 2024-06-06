@@ -4,8 +4,11 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+   
   }
+  
 
+   
   body::-webkit-scrollbar {
     width: 12px;              
   }
@@ -55,10 +58,11 @@ header {
     background-color: #f1f0f6; 
     height: 101px;
     display: flex;
+
     height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-    position: relative; 
+     
 }
 
 .header img {
@@ -87,14 +91,15 @@ header {
 .hd2 {
     display:flex;
     justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
+    width: 350px;
+    margin-left: 350px;
 }
 
 .botoes {
     display: flex;
     width: 40%;
-    justify-content:space-between;
+    justify-content:space-around;
+    padding: 20px;
 }
 
 .botao {
@@ -144,71 +149,87 @@ header {
     font-size: 15px;
 }
 
-.foto1 {
-    position: relative;
+.infos {
+    width: 100%;
+    height: 220px;
+    background-color: #E2E2E2;
     display: flex;
-    height: 200px;
-    z-index: -1 ;
-    left: 0;
-    background-color: #FFFBD8;
+    align-items: center;
 }
 
-.h{
-    font-size: 30px;
-    color: #91C041;
-    padding-left: 30%;
-    padding-top: 100px;
-}
-
-.capitulos {
-    height: 400px;
-    width: 250px;
-    background-color: white;
+.infos h2 {
     margin-left: 10%;
-    position: relative;
-    z-index: 1;
-    top: -100px;
-    border-radius: 10px;
-    font-size: 50px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
-    text-align: center;
 }
 
-.foto2 {
-    position: relative;
+.corpo {
     display: flex;
-    height: 350px;
-    width: 60%;
+}
+
+.filtros {
+    background-color: #F1F0F6;
+    width: 20%;
+    height: 1000px;
+}
+
+.filtro {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #BCBCBC;
+}
+
+.filtro h3 {
+    margin-left: 10%;
+}
+
+.pets {
+    background-color: #F8F8FA;
+    width: 80%;
+    height: 1000px;
+    
+}
+
+.titulo {
+    background-color: #F1F0F6;
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    display: flex;
+    border-left: 3px solid #BCBCBC;
+}
+
+.titulo h2{
+    margin-left: 3%;
+}
+
+.linha{
+    width: 100%;
+    height: 400px;
+    background-color: #F8F8FA;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.foto{
     background-color: #FFFBD8;
-    z-index: 1;
-    top: -450px;
-    left: 30%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
-    border-radius: 10px;
-}
-
-
-.texto h3  {
-    width: 50%;
+    width: 22%;
+    height: 80%;
+    border-radius: 15%;
     display: flex;
-    position: relative;
-    padding-left:  40%;
-    top: -400px;
-    font-size: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
-.texto h1 {
-    font-size: 40px;
-    display: flex;
-    position: relative;
-    padding-left:  40%;
-    top: -400px;
-}
+
+
 .rodape {
     height: 100px;
     width: 100%;
     background-color: #91C041;
     color: white;
     font-size: 24px;
-    z-index: 4;
+  
 }
