@@ -4,11 +4,8 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
   }
-  
 
-   
   body::-webkit-scrollbar {
     width: 12px;              
   }
@@ -50,19 +47,17 @@ header {
     padding-left: 3%;
 }
 .cabeca2 {
-   padding-left: 67%;
+   padding-left: 69.5%;
     display: flex ;
     color: white; 
 }
 .header {
     background-color: #f1f0f6; 
-    height: 101px;
     display: flex;
-
-    height: 12%;
+    height: 101px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
+    position: relative; 
 }
 
 .header img {
@@ -90,16 +85,15 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 350px;
-    margin-left: 350px;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 35%;
 }
 
 .botoes {
     display: flex;
     width: 40%;
-    justify-content:space-around;
-    padding: 20px;
+    justify-content:space-between;
 }
 
 .botao {
@@ -119,13 +113,13 @@ header {
 }
 
 
-.doar {
+.ajudar {
     background-color: #F9B15D;
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
     height: 40px;
-    width: 180%;
+    width: 160%;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -161,24 +155,24 @@ header {
 
 .separa {
     display: flex;
-    height: 500px;
+    height: 700px;
     left: 100%;
     background-color: white;
 }
 .caixa1 {
     background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    height: 80%;
+    width: 20%;
     border-radius: 10px;
     margin: 4%;
-    margin-left: 10%;
+    margin-left: 6%;
     box-shadow:5px 10px 5px #e4e3e3;
 }
 
 .caixa2 {
     background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    height: 100%;
+    width:100%;
     border-radius: 10px;
     margin-left: 110%;
     box-shadow:5px 10px 5px #e4e3e3;
@@ -186,8 +180,8 @@ header {
 
 .caixa3 {
     background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     margin-left: 110%;
     box-shadow:5px 10px 5px #e4e3e3;
@@ -195,8 +189,8 @@ header {
 
 .caixa4 {
     background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     margin-left: 110%;
     box-shadow:5px 10px 5px #e4e3e3;
