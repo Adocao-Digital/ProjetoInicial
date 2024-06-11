@@ -6,7 +6,6 @@
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
      rel="stylesheet">
-    <link rel="stylesheet" href="css/style-index.css">
     <link rel="stylesheet" href="css/style-login.css">
 </head>
 <body>
@@ -20,22 +19,21 @@
            <div class="hd">
               <div class="hd2">
                   <a href="index.html" class="ativo"><h2> Home</h2></a>
-                  <a href="#"><h2> Sobre nós</h2></a>
-                  <a href="#"><h2> Fale conosco</h2></a>
-                  <a href="#"></a>
+                  <a href="sobre.html"><h2> Sobre nós</h2></a>
+                  <a href="fale-conosco.html"><h2> Fale conosco</h2></a>
               </div>
               <div class="botoes">
-                  <a href="#">
+                  <a href="quero-adotar.html">
                   <div class="botao">
                       Quero adotar
                   </div>
                   </a>
-                  <a href="#">
-                      <div class="doar">
-                          Doar
+                  <a href="ajudar.html">
+                      <div class="ajudar">
+                          Ajudar
                       </div>
                   </a>
-                  <a href="#">
+                  <a href="login.html">
                       <div class="entrar">
                           Entrar
                       </div>
@@ -43,24 +41,24 @@
               </div>
           </div>
       </div>
-
+    <main>
       <div class="login">
        <b> <h1>Fazer Login</h1> </b>
-       <div>
-        <img class="usuario" src="img/usuario.png">
+       <div class="controle">
+        <img class="img" src="img/usuario.png">
         <label for="usuario">
-             <input class="bxusuario" type="text" id="usuario" placeholder="Digite seu usuario.." required>
+             <input class="bx" type="text" id="usuario" placeholder="Digite seu usuario.." required>
         </label>
        </div>
 
-       <div>
-        <img class="senha" src="img/senha.png">
+       <div class="controle">
+        <img class="img" src="img/senha.png">
         <label for="senha">
-            <input class="bxsenha" type="password" id="senha" placeholder="Digite sua senha..." required>
+            <input class="bx" type="password" id="senha" placeholder="Digite sua senha..." required>
         </label>
        </div>
 
-       <div>
+       <div class="controle">
         <img class="logout" src="img/logout.png">
         <label for="login">
             <input class="bxlogout" type="button" id="login" value="Login" required >
@@ -73,6 +71,9 @@
            <div id="reg">Registrar</div>
        </a>
       </div>
-
+    </main>
 </body>
+<footer>
+    <h5>Informações adicinoais</h5>
+</footer>
 </html>

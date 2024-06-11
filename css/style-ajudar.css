@@ -1,14 +1,11 @@
-* { 
+* {
     padding: 0;
     margin:0 ;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
   }
-  
 
-   
   body::-webkit-scrollbar {
     width: 12px;              
   }
@@ -30,7 +27,6 @@
       text-decoration: underline;
   }
 
-
 header {
     display: flex ;
     align-items: center;
@@ -50,18 +46,17 @@ header {
     padding-left: 3%;
 }
 .cabeca2 {
-   padding-left: 67%;
+    padding-left: 69.5%;
     display: flex ;
     color: white; 
 }
 .header {
     background-color: #f1f0f6; 
-    height: 101px;
     display: flex;
     height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
+    position: relative; 
 }
 
 .header img {
@@ -75,7 +70,7 @@ header {
 
 .header h2 {
     color: #545454;
-    text-align:left ;
+    text-align:center ;
 }
 
 .hd {
@@ -89,21 +84,26 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 50%;
     margin-left: 35%;
+}
+
+.hd2 h2 {
+    font-size: 150%;
 }
 
 .botoes {
     display: flex;
     width: 40%;
+    height: 40%;
     justify-content:space-between;
 }
 
 .botao {
     background-color: #F9B15D;
-    height: 40px;
-    width: 130%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     border-radius: 10px;
     place-items: center;
@@ -117,33 +117,34 @@ header {
 }
 
 
-.Comoaj {
-    background-color: #F9B15D;
+.ajudar {
+    background-color: #f1f0f6;
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
-    height: 40px;
-    width: 130%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: white;
+    color: #F9B15D;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .entrar {
     border: 3px;
     border-style: solid;
     border-color:#91C041;
-    background-color: #f1f0f6;
-    height: 40px;
-    width: 130%;
+    background-color: #91C041;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: #91C041;
+    color: #f1f0f6;
     font-size: 15px;
 }
 
@@ -199,95 +200,6 @@ header {
     margin-left: 110%;
     box-shadow:5px 10px 5px #e4e3e3;
 }
-
-/* POSIÇÕES UTILIZANDO RELATIVE */
-
-/* .info {
-    top: 50%;
-    height: 200px;
-    width: 100%;
-    background-color: #E2E2E2;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    position: relative;
-    
-
-}
-
-.infot {
-    top: 40%;
-    position: relative;
-    color: rgb(0, 0, 0);
-}
-
-.foto1 {
-    text-align: center;
-    border-radius: 10%;
-    top: 5px;
-    width: 300px;
-    left: 6%;
-    display: flex;
-    position: relative;
-    background-color:#FFFBD8;
-    height: 300px;
-}
-
-.foto1tx {
-    left: 42%;
-    position: relative;
-    top: 44%;
-}
-
-.foto2 {
-    text-align: center;
-    border-radius: 10%;
-    top: 25px;
-    width: 300px;
-    left: 6%;
-    display: flex;
-    position: relative;
-    background-color:#FFFBD8;
-    height: 300px;
-}
-
-
-.foto3 {
-    text-align: center;
-    border-radius: 10%;
-    top: -595px;
-    width: 300px;
-    left: 77.5%;
-    display: flex;
-    position: relative;
-    background-color:#FFFBD8;
-    height: 300px;
-}
-
-.foto4 {
-    text-align: center;
-    border-radius: 10%;
-    top: -576px;
-    width: 300px;
-    left: 77.5%;
-    display: flex;
-    position: relative;
-    background-color:#FFFBD8;
-    height: 300px;
-}
- 
-.banner {
-    top: -1197px;
-    height: 640px;
-    width: 960px;
-    background-color: #ebe8e8;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    position: relative;
-    left: 24%;
-} */
-
-
-/* FIM DO POSICIONAMENTO RELATIVE */
 
 .infotexto {
 background-color: #E2E2E2;
@@ -351,4 +263,13 @@ background-color: #E2E2E2;
     background-color: #FFFBD8;
     border-radius: 10%;
     margin-top: 20%;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #91C041;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0%;
 }
