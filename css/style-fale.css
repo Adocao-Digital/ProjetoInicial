@@ -54,7 +54,7 @@ header {
 .header {
     background-color: #f1f0f6; 
     display: flex;
-    height: 101px;
+    height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
     position: relative; 
@@ -90,16 +90,21 @@ header {
     margin-left: 35%;
 }
 
+.hd2 h2 {
+    font-size: 150%;
+}
+
 .botoes {
     display: flex;
     width: 40%;
+    height: 40%;
     justify-content:space-between;
 }
 
 .botao {
     background-color: #F9B15D;
-    height: 40px;
-    width: 130%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     border-radius: 10px;
     place-items: center;
@@ -118,8 +123,8 @@ header {
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
-    height: 40px;
-    width: 160%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -132,14 +137,14 @@ header {
     border: 3px;
     border-style: solid;
     border-color:#91C041;
-    background-color: #f1f0f6;
-    height: 40px;
-    width: 130%;
+    background-color: #91C041;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: #91C041;
+    color: #f1f0f6;
     font-size: 15px;
 }
 
@@ -233,12 +238,18 @@ header {
 }
 
 h7 {
-    font-size: 30px;
+    font-size: 28px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
+h8 {
+    font-size: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .logo2 {
     position: relative;
@@ -265,19 +276,19 @@ h7 {
     display: flex;
     left: 26%;
     text-align: center;
+    color: #545454;
 }
 
 .endereco {
     font-size: 20px;
     width: 50%;
-    position: relative;
-    display: flex;
-    left: 47%;
-    text-align: center;
+    margin-left: 26%;
     color: #545454;
+    padding: 5% 0 10% 0;
+
 }
 
-.rodape {
+footer {
     height: 100px;
     width: 100%;
     background-color: #91C041;

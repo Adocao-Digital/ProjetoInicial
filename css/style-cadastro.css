@@ -59,7 +59,7 @@ header {
 }
 .header {
     background-color: #f1f0f6; 
-    height: 101px;
+    height: 12%;
     display: flex;
     height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
@@ -92,21 +92,26 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 50%;
     margin-left: 35%;
+}
+
+.hd2 h2 {
+    font-size: 150%;
 }
 
 .botoes {
     display: flex;
     width: 40%;
+    height: 40%;
     justify-content:space-between;
 }
 
 .botao {
     background-color: #F9B15D;
-    height: 40px;
-    width: 130%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     border-radius: 10px;
     place-items: center;
@@ -120,13 +125,13 @@ header {
 }
 
 
-.doar {
+.ajudar {
     background-color: #F9B15D;
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
-    height: 40px;
-    width: 180%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -139,14 +144,14 @@ header {
     border: 3px;
     border-style: solid;
     border-color:#91C041;
-    background-color: #f1f0f6;
-    height: 40px;
-    width: 130%;
+    background-color: #91C041;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: #91C041;
+    color: #f1f0f6;
     font-size: 15px;
 }
 
@@ -162,7 +167,7 @@ header {
 
 
 
-.rodape {
+footer {
     position: absolute;
     height: 100px;
     margin-bottom: 0;
@@ -235,14 +240,11 @@ header {
 
 .caixa-direita h1{
     text-align: center;
-    margin-top: 50px;
 }
 
 label {
     margin: 1rem;;
 }
-
-
 
 .estilo-forms {
     width: 360px;
@@ -251,6 +253,18 @@ label {
     background-color: #FFBF7780;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+
+}
+
 ::placeholder {
     padding: 20px;
+}
+
+input {
+    padding: 3% 0 3% 0;
 }

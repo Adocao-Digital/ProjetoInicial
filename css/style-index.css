@@ -27,7 +27,6 @@
       text-decoration: underline;
   }
 
-
 header {
     display: flex ;
     align-items: center;
@@ -47,14 +46,14 @@ header {
     padding-left: 3%;
 }
 .cabeca2 {
-   padding-left: 69.5%;
+    padding-left: 69.5%;
     display: flex ;
     color: white; 
 }
 .header {
     background-color: #f1f0f6; 
     display: flex;
-    height: 101px;
+    height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
     position: relative; 
@@ -90,16 +89,21 @@ header {
     margin-left: 35%;
 }
 
+.hd2 h2 {
+    font-size: 150%;
+}
+
 .botoes {
     display: flex;
     width: 40%;
+    height: 40%;
     justify-content:space-between;
 }
 
 .botao {
     background-color: #F9B15D;
-    height: 40px;
-    width: 130%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     border-radius: 10px;
     place-items: center;
@@ -118,8 +122,8 @@ header {
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
-    height: 40px;
-    width: 160%;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -132,74 +136,47 @@ header {
     border: 3px;
     border-style: solid;
     border-color:#91C041;
-    background-color: #f1f0f6;
-    height: 40px;
-    width: 130%;
+    background-color: #91C041;
+    height: 90%;
+    width: 100%;
     display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: #91C041;
+    color: #f1f0f6;
     font-size: 15px;
 }
 
 .box {
     display: flex;
     height: 400px;
-    left: 100%;
     background-color: #FFFBD8;
-   margin-top: 3%;
-   color: #91C041;
-   font-size: 40px;
+    margin-top: 3%;
+    color: #91C041;
+    font-size: 40px;
 }
 
 .separa {
     display: flex;
-    height: 700px;
-    left: 100%;
+    height: 400px;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .caixa1 {
     background-color: #f1f0f6;
-    height: 80%;
-    width: 20%;
+    height: 70%;
+    width: 22%;
     border-radius: 10px;
-    margin: 4%;
-    margin-left: 6%;
-    box-shadow:5px 10px 5px #e4e3e3;
 }
 
-.caixa2 {
-    background-color: #f1f0f6;
-    height: 100%;
-    width:100%;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.caixa3 {
-    background-color: #f1f0f6;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.caixa4 {
-    background-color: #f1f0f6;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.rodape {
+footer {
     height: 100px;
     width: 100%;
     background-color: #91C041;
     color: white;
     font-size: 24px;
+    margin-bottom: 0%;
 }
