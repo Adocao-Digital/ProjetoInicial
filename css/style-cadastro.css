@@ -78,6 +78,7 @@ header {
     height: 12%;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
+     
 }
 
 .header img {
@@ -103,18 +104,19 @@ header {
 .hd2 {
     display:flex;
     justify-content: space-between;
-    align-items: end;
-    width: 100%;
-    margin-left: 80px;
+    width: 40%;
+    margin-left: 35%;
 }
+
 
 .botoes {
     display: flex;
-    width: 100%;
-    justify-content:space-around;
-    /* justify-items: right; */
-    margin-right: 130px;
+    width: 40%;
+    justify-content:space-between;
 }
+
+
+
 
 .botao {
     background-color: #F9B15D;
@@ -138,8 +140,8 @@ header {
     border-style: solid;
     border-color:#F9B15D;
     height: 40px;
-    width: 80px;
-    display: flex;
+    width: 180%;
+    display:  flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
