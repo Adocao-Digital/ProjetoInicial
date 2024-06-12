@@ -45,6 +45,7 @@ header {
 .head1 {
     display: flex;
     margin-left: 130px;
+    align-items: center;
 }
 
 .head2 {
@@ -56,16 +57,14 @@ header {
 .cabeca {
     display: flex ;
     color:white;
-    /* padding-left: 10%; */
 }
 .cabeca1{
     color: white;
     display: flex;
     width: 100%;
-    /* padding-left: 3%; */
+    padding-left: 12%;
 }
 .cabeca2 {
-    /* padding-left: 67%; */
     display: flex ;
     color: white;
     width: 100%;
