@@ -4,12 +4,11 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
+    scroll-behavior: smooth;   
   }
   
 body {
     background-color: #FFFBD8;
-    scroll-behavior: smooth;
 }
    
   body::-webkit-scrollbar {
