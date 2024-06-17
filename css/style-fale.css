@@ -125,7 +125,7 @@ header {
     padding: 10px;
 }
 
-.botao, .doar, .entrar {
+.botao, .ajudar, .entrar {
     margin-left: 10px;
     padding: 5px;
 }
@@ -154,7 +154,7 @@ header {
 }
 
 
-.doar {
+.ajudar {
     background-color: #F9B15D;
     border: 3px;
     border-style: solid;
@@ -335,7 +335,7 @@ footer {
 
 /* Decorações */
 
-.home1:hover, .home2:hover, .home3:hover, .doar:hover, .botao:hover {
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
     background-color: #91C041;
     border-radius: 10px;
 }

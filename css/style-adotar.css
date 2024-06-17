@@ -101,16 +101,17 @@ header {
 }
 
 .botao {
-    background-color: #F9B15D;
+    background-color: #f1f0f6;
     height: 90%;
     width: 100%;
     display:  flex;
     border-radius: 10px;
     place-items: center;
     font-size: 15px;
+    font-weight: bold;
     margin-top: 1px;
     justify-content: center;
-    color: white;
+    color: #F9B15D;
     border: 3px;
     border-style: solid;
     border-color:#F9B15D;
@@ -147,30 +148,85 @@ header {
     font-size: 15px;
 }
 
-.box {
+.infos {
+    width: 100%;
+    height: 220px;
+    background-color: #E2E2E2;
     display: flex;
-    height: 400px;
-    background-color: #FFFBD8;
-    margin-top: 3%;
-    color: #91C041;
-    font-size: 40px;
+    align-items: center;
 }
 
-.separa {
-    display: flex;
-    height: 400px;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
+.infos h2 {
     margin-left: 10%;
-    margin-right: 10%;
+    color:#545454;
+    
 }
-.caixa1 {
-    background-color: #f1f0f6;
-    height: 70%;
+
+.corpo {
+    display: flex;
+}
+
+.filtros {
+    background-color: #F1F0F6;
+    width: 20%;
+    height: 1000px;
+}
+
+.filtro {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #BCBCBC;
+    color: #545454;
+}
+
+.filtro h3 {
+    margin-left: 10%;
+}
+
+.pets {
+    background-color: #F8F8FA;
+    width: 80%;
+    height: 1000px;
+    color:#545454;
+    
+}
+
+.titulo {
+    background-color: #F1F0F6;
+    width: 99.7%;
+    height: 12%;
+    align-items: center;
+    display: flex;
+    border-left: 3px solid #BCBCBC;
+}
+
+.titulo h2{
+    margin-left: 3%;
+}
+
+.linha{
+    width: 100%;
+    height: 400px;
+    background-color: #F8F8FA;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.foto{
+    background-color: #FFFBD8;
     width: 22%;
-    border-radius: 10px;
+    height: 80%;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 footer {
     height: 100px;
@@ -178,5 +234,5 @@ footer {
     background-color: #91C041;
     color: white;
     font-size: 24px;
-    margin-bottom: 0%;
+  
 }
