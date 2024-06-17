@@ -279,3 +279,14 @@ label {
 ::placeholder {
     padding: 20px;
 }
+
+/* Decorações */
+
+.home1:hover, .home2:hover, .home3:hover, .doar:hover, .botao:hover {
+    background-color: #91C041;
+    border-radius: 10px;
+}
+
+.entrar:hover {
+background-color: #F9B15D;
+}

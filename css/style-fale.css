@@ -321,10 +321,25 @@ h7 {
     color: #545454;
 }
 
+address {
+    text-align: center;
+}
+
 footer {
     height: 100px;
     width: 100%;
     background-color: #91C041;
     color: white;
     font-size: 24px;
+}
+
+/* Decorações */
+
+.home1:hover, .home2:hover, .home3:hover, .doar:hover, .botao:hover {
+    background-color: #91C041;
+    border-radius: 10px;
+}
+
+.entrar:hover {
+background-color: #F9B15D;
 }
