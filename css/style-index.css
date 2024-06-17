@@ -209,52 +209,27 @@ li img {
 
 .separa {
     display: flex;
-    height: 500px;
+    height: 400px;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .caixa1 {
     background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
+    height: 70%;
+    width: 22%;
     border-radius: 10px;
-    margin: 4%;
-    margin-left: 10%;
-    box-shadow:5px 10px 5px #e4e3e3;
 }
 
-.caixa2 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.caixa3 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.caixa4 {
-    background-color: #f1f0f6;
-    height: 353px;
-    width: 282px;
-    border-radius: 10px;
-    margin-left: 110%;
-    box-shadow:5px 10px 5px #e4e3e3;
-}
-
-.rodape {
+footer {
     height: 100px;
     width: 100%;
     background-color: #91C041;
     color: white;
     font-size: 24px;
+    margin-bottom: 0%;
 }
 
 /* Decorações */
