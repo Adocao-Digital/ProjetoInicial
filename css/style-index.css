@@ -212,15 +212,13 @@ li img {
     height: 400px;
     width: 100%;
     background-color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 .caixa1 {
     background-color: #f1f0f6;
     height: 70%;
-    width: 22%;
+    width: 18%;
     border-radius: 10px;
 }
 
