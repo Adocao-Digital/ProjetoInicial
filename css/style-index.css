@@ -8,7 +8,7 @@
   }
   
 body {
-    background-color: #FFFBD8;
+    background-color: white;
 }
    
 body::-webkit-scrollbar {
@@ -24,6 +24,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       
     border: 3px solid #f1f0f6; 
   }
+
+/* Começo do Header */
 
 a {
     text-decoration: none;
@@ -75,7 +77,7 @@ header {
 .header {
     background-color: #f1f0f6;
     display: flex;
-    height: 12%;
+    height: 90px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
      
@@ -98,6 +100,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -106,16 +109,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
-    margin-right: 5%;
-}
+    justify-content: right;
+    width: 100%;
+
 
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -183,47 +183,74 @@ header {
     font-size: 15px;
 }
 
+/* Fim do header */
+
+.slide-button {
+    position: relative;
+    top: -50px;
+}
+
 .box {
     text-align: center;
     display: flex;
-    height: 400px;
+    margin-top: 5%;
+    height: 390px;
+    width: 100%;
     justify-content: center;
     background-color: #FFFBD8;
-    margin-top: 10px;
     color: #91C041;
     font-size: 40px;
 }
 
 .box input {
-    position: relative;
-    top: 45%;
-    left: 50%;
     z-index: 5;
 }
-
-li img {
+  
+.slide2 img {
     border-radius: 10px;
     width: max-content;
-    height: 350px;
+    height: 390px;
 }
 
+.slide1 img {
+    width: 50%;
+    height: 390px;
+}
+
+
+/* MUDEEEI */
 .separa {
     display: flex;
     height: 400px;
-    width: 100%;
-    background-color: white;
     justify-content: space-around;
     align-items: center;
+    margin: 0 110px 0 110px;
 }
+
+/* MUDEEEEEI */
 .caixa1 {
     background-color: #f1f0f6;
-    height: 70%;
-    width: 18%;
+    height: 300px;
+    width: 250px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa1 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8%;
+}
+
+a {
+    color: black;
 }
 
 footer {
-    height: 100px;
+    height: 280px;
     width: 100%;
     background-color: #91C041;
     color: white;
@@ -231,35 +258,77 @@ footer {
     margin-bottom: 0%;
 }
 
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.esquerda h5 {
+    font-size: large;
+}
+
+.esquerda h6 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.devs {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.devs img {
+    height: 50px;
+    width: 50px;
+    opacity: 50%;
+    margin-top: 15%;
+}
+
+footer img {
+    width: 100px;
+    height: 120px;
+}
+
 /* Decorações */
 
 .home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
-        background-color: #91C041;
-        border-radius: 10px;
+    background-color: #91C041;
+    border-radius: 10px;
 }
 
 .entrar:hover {
-    background-color: #F9B15D;
+background-color: #F9B15D;
 }
 
 .slides-list{
-    --selected-item: 0;
-    --total-items: 3;
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0;
-    position: relative;
-    left: calc(var(--selected-item) * -100%);
-    width: calc(var(--total-items) * 100%);
-    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);    
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
+--selected-item: 0;
+--total-items: 3;
+list-style-type: none;
+padding: 0;
+position: relative;
+left: calc(var(--selected-item) * -100%);
+width: calc(var(--total-items) * 100%);
+transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);    
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 1fr;
+}
 
 .slide-show {
-    overflow: hidden;
-  }
+overflow: hidden;
+}
 
 .slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
 .slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}

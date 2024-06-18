@@ -25,6 +25,8 @@ body {
     border: 3px solid #f1f0f6; 
   }
 
+/* Começo do header */
+
   a {
       text-decoration: none;
   }
@@ -34,7 +36,7 @@ body {
   }
 
 
-header {
+  header {
     display: flex ;
     background-color: #91c041;
     height: 30px;
@@ -73,13 +75,11 @@ header {
     margin-right: 130px;
 }
 .header {
-    background-color: #f1f0f6; 
-    height: 12%;
+    background-color: #f1f0f6;
     display: flex;
-    height: 12%;
+    height: 80px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
 }
 
 .header img {
@@ -99,6 +99,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -107,15 +108,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-left: 35%;
-    margin-right: 5%;
+    justify-content: right;
+    width: 100%;
 }
+
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -183,16 +182,7 @@ header {
     font-size: 15px;
 }
 
-.rodape {
-    position: absolute;
-    height: 100px;
-    margin-bottom: 0;
-    width: 100%;
-    background-color: #91C041;
-    color: white;
-    font-size: 24px;
-    z-index: 1;
-}
+/* Fim do Header */
 
 .titulo-cadastro {
     position: relative;
@@ -214,7 +204,6 @@ header {
 .botao-entrar {
     display: flex;
     justify-content: center;
-    /* align-self: center; */
     top: 250px;
     position: relative;
 }
@@ -281,14 +270,77 @@ label {
 
 }
 
-::placeholder {
-    padding: 20px;
+button {
+    margin-top: 10px;
+    background: #F9B15D;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+
+button:active {
+    background: white;
 }
 
 input {
-    padding: 3% 0 3% 0;
+    padding: 3%;
+}
 
-/* Decorações */
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: #91C041;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.esquerda h5 {
+    font-size: large;
+}
+
+.esquerda h6 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.devs {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.devs img {
+    height: 50px;
+    width: 50px;
+    opacity: 50%;
+    margin-top: 15%;
+}
+
+footer img {
+    width: 100px;
+    height: 120px;
+}
+
+    /* Decorações */
 
 .home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
     background-color: #91C041;
@@ -297,3 +349,4 @@ input {
 
 .entrar:hover {
 background-color: #F9B15D;
+}
