@@ -214,7 +214,6 @@ footer {
 .botao-entrar {
     display: flex;
     justify-content: center;
-    /* align-self: center; */
     top: 250px;
     position: relative;
 }
@@ -278,15 +277,28 @@ label {
     flex-direction: column;
     height:100%;
     justify-content: center;
-
 }
 
-::placeholder {
-    padding: 20px;
+button {
+    margin-top: 10px;
+    background: lightblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+
+button:active {
+    background: #F9B15D;
+}
+
+.cad button h4 {
+    color: rgba(221,221,221,1) 0%;
 }
 
 input {
-    padding: 3% 0 3% 0;
+    padding: 3%;
 }
 
 /* Decorações */
