@@ -281,7 +281,7 @@ label {
 
 button {
     margin-top: 10px;
-    background: lightblue;
+    background: #F9B15D;
     border: none;
     color: white;
     padding: 10px;
@@ -290,11 +290,7 @@ button {
 }
 
 button:active {
-    background: #F9B15D;
-}
-
-.cad button h4 {
-    color: rgba(221,221,221,1) 0%;
+    background: white;
 }
 
 input {
