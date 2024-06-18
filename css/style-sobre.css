@@ -25,13 +25,15 @@ body {
     border: 3px solid #f1f0f6; 
   }
 
-  a {
-      text-decoration: none;
+/* Começo do Header */
+
+a {
+    text-decoration: none;
   }
   
-  .ativo {
-      text-decoration: underline;
-  }
+.ativo {
+    text-decoration: underline;
+}
 
 
 header {
@@ -98,6 +100,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -106,16 +109,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
-    margin-right: 5%;
+    justify-content: right;
+    width: 100%;
 }
 
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -182,6 +182,8 @@ header {
     border-radius: 10px;
     font-size: 15px;
 }
+
+/* Fim do header */
 
 .amarelo {
     position: absolute;

@@ -25,6 +25,8 @@ body {
     border: 3px solid #f1f0f6; 
   }
 
+/* Começo do header */
+
   a {
       text-decoration: none;
   }
@@ -34,7 +36,7 @@ body {
   }
 
 
-header {
+  header {
     display: flex ;
     background-color: #91c041;
     height: 30px;
@@ -73,13 +75,11 @@ header {
     margin-right: 130px;
 }
 .header {
-    background-color: #f1f0f6; 
-    height: 90px;
+    background-color: #f1f0f6;
     display: flex;
-    height: 12%;
+    height: 80px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
 }
 
 .header img {
@@ -99,6 +99,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -107,15 +108,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-left: 35%;
-    margin-right: 5%;
+    justify-content: right;
+    width: 100%;
 }
+
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -183,6 +182,7 @@ header {
     font-size: 15px;
 }
 
+/* Fim do Header */
 
 .titulo-cadastro {
     position: relative;
@@ -204,7 +204,6 @@ header {
 .botao-entrar {
     display: flex;
     justify-content: center;
-    /* align-self: center; */
     top: 250px;
     position: relative;
 }
@@ -271,12 +270,22 @@ label {
 
 }
 
-::placeholder {
-    padding: 20px;
+button {
+    margin-top: 10px;
+    background: #F9B15D;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+
+button:active {
+    background: white;
 }
 
 input {
-    padding: 3% 0 3% 0;
+    padding: 3%;
 }
 
 footer {
