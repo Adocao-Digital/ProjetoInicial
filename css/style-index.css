@@ -1,10 +1,9 @@
-* {
+  * {
     padding: 0;
     margin:0 ;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
   }
   
 body {
@@ -25,13 +24,15 @@ body {
     border: 3px solid #f1f0f6; 
   }
 
+  /* Começo do Header */
+
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
   
-  .ativo {
-      text-decoration: underline;
-  }
+.ativo {
+    text-decoration: underline;
+}
 
 
 header {
@@ -75,10 +76,9 @@ header {
 .header {
     background-color: #f1f0f6;
     display: flex;
-    height: 12%;
+    height: 80px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
 }
 
 .header img {
@@ -98,6 +98,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -106,16 +107,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
-    margin-right: 5%;
+    justify-content: right;
+    width: 100%;
 }
 
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -125,7 +123,7 @@ header {
     padding: 10px;
 }
 
-.botao, .doar, .entrar {
+.botao, .ajudar, .entrar {
     margin-left: 10px;
     padding: 5px;
 }
@@ -154,7 +152,7 @@ header {
 }
 
 
-.doar {
+.ajudar {
     background-color: #F9B15D;
     border: 3px;
     border-style: solid;
@@ -183,21 +181,26 @@ header {
     font-size: 15px;
 }
 
+/* Fim do Header */
+
+.slide-button {
+    position: relative;
+    top: -50px;
+}
+
 .box {
     text-align: center;
     display: flex;
-    height: 400px;
+    margin-top: 5%;
+    height: 390px;
+    width: 100%;
     justify-content: center;
     background-color: #FFFBD8;
-    margin-top: 10px;
     color: #91C041;
     font-size: 40px;
 }
 
 .box input {
-    position: relative;
-    top: 45%;
-    left: 50%;
     z-index: 5;
 }
 
@@ -249,7 +252,7 @@ li img {
     box-shadow:5px 10px 5px #e4e3e3;
 }
 
-.rodape {
+footer {
     height: 100px;
     width: 100%;
     background-color: #91C041;
@@ -259,7 +262,7 @@ li img {
 
 /* Decorações */
 
-.home1:hover, .home2:hover, .home3:hover, .doar:hover, .botao:hover {
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
         background-color: #91C041;
         border-radius: 10px;
 }
@@ -272,7 +275,6 @@ li img {
     --selected-item: 0;
     --total-items: 3;
     list-style-type: none;
-    margin: 10px 0;
     padding: 0;
     position: relative;
     left: calc(var(--selected-item) * -100%);

@@ -4,7 +4,6 @@
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
   }
   
 body {
@@ -25,7 +24,9 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #f1f0f6; 
   }
 
-a {
+  /* Começo do Header */
+
+  a {
     text-decoration: none;
   }
   
@@ -75,10 +76,9 @@ header {
 .header {
     background-color: #f1f0f6;
     display: flex;
-    height: 12%;
+    height: 80px;
     box-shadow:0px 10px 5px #e4e3e3;
     margin: 0 auto;
-     
 }
 
 .header img {
@@ -98,6 +98,7 @@ header {
     align-items: center;
     font-size: 10px;
     width: 100%;
+    margin-right: 130px;
 }
 
 .hd2 a {
@@ -106,16 +107,13 @@ header {
 
 .hd2 {
     display:flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
-    margin-right: 5%;
+    justify-content: right;
+    width: 100%;
 }
 
 
 .botoes {
     display: flex;
-    width: 30%;
     justify-content:space-between;
     margin-right: 130px;
 }
@@ -125,7 +123,7 @@ header {
     padding: 10px;
 }
 
-.botao, .doar, .entrar {
+.botao, .ajudar, .entrar {
     margin-left: 10px;
     padding: 5px;
 }
@@ -154,7 +152,7 @@ header {
 }
 
 
-.doar {
+.ajudar {
     background-color: #F9B15D;
     border: 3px;
     border-style: solid;
@@ -183,9 +181,7 @@ header {
     font-size: 15px;
 }
 
-body{
-    background-color: #FFFBD8;
-}
+/* Fim do Header */
 
 main {
     display: flex;
@@ -194,9 +190,9 @@ main {
     padding-bottom: 5%;
 }
 
-.login{
-    width: 40%;
-    height: 588px;
+.conteudo-login{
+    width:max-content;
+    height: max-content;
     margin-top: 5%;
     background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -234,17 +230,17 @@ h1{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 3%;
     margin-top: 5%;
+    margin-right: 20px;
     width: 80%;
 }
 
 .bx{
     position: relative;
     box-sizing: border-box;
-    width: 208%;
+    width: 400px;
     height: 50px;
-    margin-left: 20%;
+    margin-left: 20px;
     background: rgba(255, 191, 119, 0.5);
     border: 2px solid #F9B15D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -256,17 +252,17 @@ h1{
     height: 60px;
     display: flex;
     align-items: center;
+    margin-left: 20px;
     border: 1px solid #F1F0F6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
 }
 
 .bxlogout{
-    position: relative;
     box-sizing: border-box;
-    width: 325px;
+    width: 150px;
     height: 50px;
-    margin-left: 10%;
+    margin-left: 128px;
     background: #B0E850;
     border: 2px solid #6A8D2E;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -279,6 +275,7 @@ h1{
     display: flex;
     align-items: center;
     border: 1px solid #F1F0F6;
+    margin-left: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
 }
@@ -297,6 +294,7 @@ p{
     margin-top: 5%;
     text-align: center;
     margin-left: 8%;
+    margin-bottom: 5%;
     font-size: 24px;
     font-family: 'Mulish', sans-serif;
 }
@@ -309,13 +307,18 @@ footer {
     font-size: 24px;
 }
 
+/* Correção da visualização do body */
+body {
+    height: 100vh;
+}
+
 ::placeholder {
     padding: 5%;
 }
 
 /* Decorações */
 
-.home1:hover, .home2:hover, .home3:hover, .doar:hover, .botao:hover {
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
     background-color: #91C041;
     border-radius: 10px;
 }
