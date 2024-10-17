@@ -194,7 +194,7 @@ main {
 
 .conteudo-login{
     width:max-content;
-    height: max-content;
+    /* height: max-content; */
     margin-top: 5%;
     background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -230,11 +230,35 @@ h1{
 
 .controle {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: left;
     margin-top: 5%;
     margin-right: 20px;
     width: 80%;
+}
+
+.controle-login {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.bxlogin{
+    /* box-sizing: border-box; */
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B0E850;
+    border: 2px solid #6A8D2E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 
 .login {
@@ -246,48 +270,54 @@ h1{
     box-sizing: border-box;
     width: 300px;
     height: 50px;
-    margin-left: 15%;
+    margin-left: 8%;
+    margin-top: 8px;
     background: rgba(255, 191, 119, 0.5);
     border: 2px solid #F9B15D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
+.mostrar-senha {
+    position: absolute;
+    right: -30px;
+    top: 55%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mostrar-senha img {
+    width: 30px;
+}
+
 input {
     padding: 5%;
 }
 
-.img{
+.img-person{
     width: 60px;
     height: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 35px;
-    border: 1px solid #F1F0F6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 55px;
+    /* border: 1px solid #F1F0F6; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 100px;
 }
 
-.bxlogout{
-    box-sizing: border-box;
-    width: 150px;
-    height: 50px;
-    margin-left: 128px;
-    background: #B0E850;
-    border: 2px solid #6A8D2E;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.logout{
+.img-lock{
     width: 60px;
     height: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    border: 1px solid #F1F0F6;
-    margin-left: 35px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
+    margin-left: 55px;
+    /* border: 1px solid #F1F0F6; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 100px; */
 }
 
 p{

@@ -263,11 +263,39 @@ label {
 }
 
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     height:100%;
     justify-content: center;
+}
 
+.mostrar-senha {
+    position: absolute;
+    right: -20px;
+    top: 62.2%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.confirm-senha {
+    position: absolute;
+    right: -20px;
+    top: 81%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mostrar-senha img {
+    width: 30px;
+}
+
+.confirm-senha img {
+    width: 30px;
 }
 
 button {
@@ -280,7 +308,7 @@ button {
     margin-left: 40%;
 }
 
-button:active {
+.cad button:active {
     background: white;
 }
 
