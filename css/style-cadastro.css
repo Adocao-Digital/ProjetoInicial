@@ -25,6 +25,165 @@ body {
     border: 3px solid #f1f0f6; 
   }
 
+/* Começo do header */
+
+  a {
+      text-decoration: none;
+  }
+  
+  .ativo {
+      text-decoration: underline;
+  }
+
+
+  header {
+    display: flex ;
+    background-color: #91c041;
+    height: 30px;
+    font-size: 10px;
+    width: 100%;
+}
+
+.head1 {
+    display: flex;
+    margin-left: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cabeca {
+    display: flex ;
+    color:white;
+}
+.cabeca1{
+    color: white;
+    display: flex;
+    width: 100%;
+    padding-left: 12%;
+}
+.cabeca2 {
+    display: flex ;
+    color: white;
+    width: 100%;
+    justify-content: right;
+    margin-right: 130px;
+}
+.header {
+    background-color: #f1f0f6;
+    display: flex;
+    height: 90px;
+    box-shadow:0px 10px 5px #e4e3e3;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 150px;
+    min-width: 300px;
+    margin-left: 130px;
+}
+
+
+.header h2 {
+    color: #545454;
+    text-align: center;
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    width: 100%;
+    margin-right: 130px;
+}
+
+.hd2 a {
+    width: max-content;
+}
+
+.hd2 {
+    display:flex;
+    justify-content: right;
+    width: 100%;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 130px;
+}
+
+.home1, .home2, .home3 {
+    width: max-content;
+    padding: 10px;
+}
+
+.botao, .ajudar, .entrar {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.botoes a {
+    color: white;
+    padding: 10px;
+}
+
+.entrar a {
+    color: #91C041;
+}
+
+.botao {
+    background-color: #F9B15D;
+    height: 40px;
+    width: max-content;
+    display:  flex;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    border: 3px;
+    border-style: solid;
+    border-color:#F9B15D;
+}
+
+
+.ajudar {
+    background-color: #F9B15D;
+    border: 3px;
+    border-style: solid;
+    border-color:#F9B15D;
+    height: 40px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.entrar {
+    border: 3px;
+    border-style: solid;
+    border-color:#91C041;
+    background-color: #fff;
+    height: 40px;
+    width: max-content;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* Fim do Header */
+
 .titulo-cadastro {
     position: relative;
     top: 50px;
