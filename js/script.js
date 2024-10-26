@@ -14,3 +14,16 @@ function toggleSenha() {
         imgSenha.alt = "Olho Fechado";
     }
 }
+
+function classeAtivo() {
+    const ativo = document.getElementById("ativo");
+    ativo.checked = !ativo.checked;
+
+    const classe = ativo.checked ? "btn-success" : "btn-danger";
+    ativo.className = "btn " + classe;
+
+    const texto = ativo.checked ? "Ativo" : "Inativo";
+    ativo.textContent = texto;
+
+    return false;
+}
