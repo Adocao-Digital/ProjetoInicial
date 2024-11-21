@@ -43,14 +43,14 @@ header {
 }
 
 .navbar-brand img {
-    content: url("../img/logo.png");
+    content: url("/ccz/img/logo.png");
     width: 300px;
     height: 82px; 
 }
 
 @media (max-width: 460px){
     .navbar-brand img {
-        content: url("../img/minilogo.webp");
+        content: url("/ccz/img/minilogo.webp");
         max-width: 70px;
         max-height: 70px;
     }
