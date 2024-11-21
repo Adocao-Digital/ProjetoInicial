@@ -22,7 +22,7 @@
             <div class="controle">
                 <img class="img-person" src="img/usuario.png">
                 <label for="usuario">
-                    <input class="bx" type="text" id="usuario" placeholder="Digite seu usuario.." required>
+                    <input class="bx" type="text" id="usuario" placeholder="Digite seu e-mail.." required>
                 </label>
             </div>
 
@@ -41,7 +41,7 @@
             
             <p>Esqueci minha senha</p>
 
-            <a href="cadastro.php">
+            <a href="/CCZ/cadastro">
                 <div id="reg">Registrar</div>
             </a>
             </div>

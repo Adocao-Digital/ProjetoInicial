@@ -25,25 +25,26 @@
         </div>
     <h2>Seja bem-vindo de volta! <br/> Venha fazer a diferença <br/>conosco.</h2>
         <div class="botao-entrar">
-            <a href="login.php">Entrar</a>
+            <a href="/CCZ/login">Entrar</a>
         </div>
     </div>
     <div class="caixa-direita">
-        <div class="form">
+        <form class="form" id="formscad" action="" method="post">
             <h1>Registrar-se</h1>
             <label for="inome" class="padding">Nome completo:</label>
             <input type="text" id="itext" class="estilo-forms" placeholder="Digite seu nome completo..." required>
             <label for="iemail">E-mail:</label>
-            <input type="text" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required>
+            <input type="email" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required>
             <label for="ipassword">Digite sua senha:</label>
             <input type="password" id="ipassword" class="estilo-forms" placeholder="Digite sua senha..." required>
             <button type="button" class="mostrar-senha" onclick="toggleSenha()"><img src="img/closed-eye.png" alt="Olho Fechado" id="imgSenha"></button>
             <label for="iconfirm">Confirme sua senha:</label>
             <input type="password" id="iconfirm" class="estilo-forms" placeholder="Confirme sua senha..." required>
             <button type="button" class="confirm-senha" onclick="toggleSenha2()"><img src="img/closed-eye.png" alt="Olho Fechado" id="imgSenhaConfirm"></button>
+            <span id="escrita" class="error"></span>
             <div class="cad">
                 <button type="submit">Cadastrar</button>
-            </div>
+        </form>
         </div>
     </div>
 </div>
