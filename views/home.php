@@ -16,6 +16,7 @@
 <body>
     <!-- Início do cabeçalho -->
     <?php
+        require_once 'models/conexao.class.php';
         require_once 'header.html';
     ?>
     <!-- Fim do cabeçalho -->
