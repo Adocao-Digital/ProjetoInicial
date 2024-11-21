@@ -1,4 +1,20 @@
-footer {
+
+.footer {
+    background-color: #91c041;
+    color:white;
+}
+
+
+.overflow-hidden {
+    max-width: max-content !important;
+}
+
+.row {
+    margin: 30px;
+}
+
+
+/* footer {
     height: 280px;
     width: 100%;
     background-color: #91C041;
@@ -48,4 +64,4 @@ footer {
 footer img {
     width: 100px;
     height: 120px;
-}
+} */
