@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu cadastro</title>
     <link rel="stylesheet" href="css/style-cadastro.css">
+    <link rel="stylesheet" href="css/style-header.css">
     <link rel="icon" type="image/x-icon" href="img/dogo-argentino.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,37 +14,10 @@
 </head>
 <body>
     <!-- Início do cabeçalho -->
-    <header>
-        <div class="head1">
-            <h3 class="cabeca" > Dúvidas</h3>
-            <h3 class="cabeca1"> Contatos </h3>
-        </div>
-        <div class="head2">
-            <h3 class="cabeca2"> Redes sociais</h3>
-        </div>
-    </header>
-        <div class="header">
-        <img src="img/logo.jpeg">
-        <div class="hd">
-            <div class="hd2">
-                <div class="home1"><a href="index.html"><h2> Home</h2></a></div>
-                <div class="home2"><a href="sobre.html"><h2> Sobre nós</h2></a></div>
-                <div class="home3"><a href="fale-conosco.html"><h2> Fale conosco</h2></a></div>
-            </div>
-            <div class="botoes">
-                <div class="botao">
-                    <a href="quero-adotar.html">Quero adotar</a>
-                </div>
-                <div class="ajudar">
-                    <a href="ajudar.html">Ajudar</a>
-                </div>
-                <div class="entrar">
-                    <a href="login.html">Entrar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- Fim do cabeçalho -->
+    <?php
+        require_once 'header.html';
+    ?>
+    <!-- Fim do cabeçalho -->
 <div class="caixa-total">
     <div class="caixa-esquerda">
         <div class="titulo-cadastro">
@@ -51,7 +25,7 @@
         </div>
     <h2>Seja bem-vindo de volta! <br/> Venha fazer a diferença <br/>conosco.</h2>
         <div class="botao-entrar">
-            <a href="login.html">Entrar</a>
+            <a href="login.php">Entrar</a>
         </div>
     </div>
     <div class="caixa-direita">
@@ -63,16 +37,22 @@
             <input type="text" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required>
             <label for="ipassword">Digite sua senha:</label>
             <input type="password" id="ipassword" class="estilo-forms" placeholder="Digite sua senha..." required>
+            <button type="button" class="mostrar-senha" onclick="toggleSenha()"><img src="img/closed-eye.png" alt="Olho Fechado" id="imgSenha"></button>
             <label for="iconfirm">Confirme sua senha:</label>
             <input type="password" id="iconfirm" class="estilo-forms" placeholder="Confirme sua senha..." required>
+            <button type="button" class="confirm-senha" onclick="toggleSenha2()"><img src="img/closed-eye.png" alt="Olho Fechado" id="imgSenhaConfirm"></button>
             <div class="cad">
                 <button type="submit">Cadastrar</button>
             </div>
         </div>
     </div>
 </div>
+<script src="js/script-ativo.js"></script> 
+<script src="js/script-cad.js"></script>
 </body>
 <footer>
-    <h5>Informações adicinoais</h5>
+    <?php
+        require_once 'footer.html';
+    ?>
 </footer>
 </html>
