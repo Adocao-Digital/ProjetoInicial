@@ -65,7 +65,7 @@
             <option value="" disabled selected>Selecione o ano</option>
         </select>
 
-        <button type="submit">Ok</button><br>   
+        <button type="submit" id="ok">Ok</button><br>   
                 <label for="ipassword">Digite sua senha:
                     <input type="password" id="ipassword" class="estilo-forms" placeholder="Digite sua senha..." required>
                 </label><br>
