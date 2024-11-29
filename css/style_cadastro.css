@@ -71,6 +71,11 @@ label {
     background-color: #FFBF7780;
 }
 
+.cad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 button {
     background: #F9B15D;
     border: none;

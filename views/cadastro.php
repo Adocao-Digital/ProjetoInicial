@@ -29,48 +29,29 @@
             <div class="form">
                 <h1>Registrar-se</h1>
                 <label for="inome" class="padding">Nome completo:
-                    <input type="text" id="itext" class="estilo-forms" placeholder="Digite seu nome completo..." required></label>
+                    <input type="text" id="itext" class="estilo-forms" placeholder="Digite seu nome completo..." required>
+                </label>
                 <label for="iemail">E-mail:
-                    <input type="text" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required></label>
-                <label for="ipassword">Sexo:
-                    <select name="select" required class="sexoform"></label>
-                <option value=""  disabled selected >Selecione...</option>
-                <option value="valor2">Masculino</option>
-                <option value="valor3">Feminino</option>
-                <option value="valor4">Não-binário</option>
-                <option value="valor5">Prefiro não informar</option>
-                </select>
-                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                <label for="iemail">Selecione sua data de nascimento:<br>
-                <label for="dia:" >Dia:</label>
-        <select id="dia" name="dia" class="dia" >
-            <option value="" disabled selected>Selecione o dia</option>
-        </select>
-
-        <label for="mes">Mês:</label>
-        <select id="mes" name="mes" class="mes">
-            <option value="" disabled selected>Selecione o mês</option>
-            <option value="1">Janeiro</option>
-            <option value="2">Fevereiro</option>
-            <option value="3">Março</option>
-            <option value="4">Abril</option>
-            <option value="5">Maio</option>
-            <option value="6">Junho</option>
-            <option value="7">Julho</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setembro</option>
-            <option value="10">Outubro</option>
-            <option value="11">Novembro</option>
-            <option value="12">Dezembro</option>
-        </select>
-
-        <label for="ano">Ano:</label>
-        <select id="ano" name="ano" class="ano">
-            <option value="" disabled selected>Selecione o ano</option>
-        </select>  
+                    <input type="text" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required>
+                </label>
+                <label for="itelefone">Telefone:
+                    <input type="text" id="itelefone" class="estilo-forms" placeholder="Digite seu telefone..." required>
+                </label>
+                <label for="isexo">Sexo:
+                    <select name="select" required class="sexoform">
+                        <option value="valor1"  disabled selected >Selecione...</option>
+                        <option value="valor2">Masculino</option>
+                        <option value="valor3">Feminino</option>
+                        <option value="valor4">Não-binário</option>
+                        <option value="valor5">Prefiro não informar</option>
+                    </select>
+                </label>
+                <label for="idatanascimento">Selecione sua data de nascimento:<br>
+                    <input type="date" id="idatanascimento" class="estilo-forms" required>
+                </label> 
                 <label for="ipassword">Digite sua senha:
                     <input type="password" id="ipassword" class="estilo-forms" placeholder="Digite sua senha..." required>
-                </label><br>
+                </label>
                 <label for="iconfirm">Confirme sua senha:
                     <input type="password" id="iconfirm" class="estilo-forms" placeholder="Confirme sua senha..." required>
                 </label>
@@ -78,7 +59,6 @@
                     <button type="submit">Cadastrar</button>
                 </div>
             </div>
-
         </div>
         <div class="caixa-esquerda">
             <div class="titulo-cadastro">

@@ -5,7 +5,7 @@
         }
 
         public function inserir($usuario){
-            $sql = $this->db->prepare("INSERT INTO usuarios (nome, sobrenome, cpf, email, senha, telefone, perfil) VALUES (?, ?, ?, ?, ?, ?)");
+            $sql = $this->db->prepare("INSERT INTO usuarios (nome_usuario, sobrenome_usuario, cpf_usuario, email_usuario, senha_usuario, telefone_usuario, perfil_usuario) VALUES (?, ?, ?, ?, ?, ?, ?)");
             try{
                 $stm = $this->db->prepare($sql);
                 $stm->bindValue(1, $usuario->getNome());
