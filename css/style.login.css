@@ -5,25 +5,19 @@
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
-
 body {
     background-color: #FFFBD8;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main {
-    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 /* Caixa principal */
 .conteudo-login {
-    width: 70%;
     max-width: 300px;
     background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -122,7 +116,7 @@ main {
 @media (min-width: 768px) {
     .conteudo-login {
         max-width: 600px;
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .login h1 {
@@ -130,6 +124,6 @@ main {
     }
 
     .formulario {
-        gap: 2rem;
+        gap: 1rem;
     }
 }
