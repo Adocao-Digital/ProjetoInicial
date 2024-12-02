@@ -105,134 +105,18 @@
     ?>
     <!-- Fim do cabeçalho -->
     <div class="container infos">
-    <h2>Adote um amigo!</h1>
+        <h2>Adote um amigo!</h1>
+        <h6>Aqui você encontra todos os anjinhos que estão procurando uma família amorosa.</h6>
     </div>
     <div class="container c-body">
-        <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-responsive accordion-flush accordion-size" id="accordionFlushExample">
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Filtros
-                </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Espécie
-                </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Gato
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Cachorro
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Idade
-                </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Filhote
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Adulto
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Idoso
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Porte
-                </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Pequeno
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Médio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Grande
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Sexo
-                </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Macho
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Fêmea
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header filtro">
                     Filtros
                 </h2>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header header-filtros">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Espécie
                 </button>
@@ -253,7 +137,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header header-filtros">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     Idade
                 </button>
@@ -278,7 +162,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header header-filtros">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     Porte
                 </button>
@@ -303,7 +187,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header header-filtros">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                     Sexo
                 </button>
@@ -313,11 +197,11 @@
                         <div class="radio-group">
                             <div class="style__Radio-sc-1k188yz-10 esgxWX radio checked">
                                 <input name="gato" type="radio" value="gato">
-                                <label for="gato" class="radio-label">Gato</label>
+                                <label for="gato" class="radio-label">Macho</label>
                             </div>
                             <div class="style__Radio-sc-1k188yz-10 esgxWX radio ">
                                 <input name="cachorro" type="radio" value="cachorro">
-                                <label for="cachorro" class="radio-label">Cachorro</label>
+                                <label for="cachorro" class="radio-label">Fêmea</label>
                             </div>
                         </div>
                     </div>
@@ -325,7 +209,60 @@
             </div>
         </div>
         <div class="container animals">
-
+            <div class="titulo"> 
+                <h2>Pets disponíveis</h2>
+            </div>
+            <div class="container fotos">
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro1.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Amora</h5>
+                        <p class="card-text">Dócil e muito amigável, gosta de brincar e se da bem com gatos.</p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro2.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Bruce</h5>
+                        <p class="card-text">Filhotão brincalhão que adora correr atrás de bolinhas.
+                        </p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro3.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Xiquinha</h5>
+                        <p class="card-text">Filhote muito doce, provável porte médio para grande.</p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro4.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Zéquinha</h5>
+                        <p class="card-text">Está a algum tempo sem família e sonha muito com um lar amoroso.</p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro5.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Toninho Rodrigues</h5>
+                        <p class="card-text">Porte médio e brincalhão, gosta de outros cachorros.</p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+                <div class="card card-cc" style="width: 18rem;">
+                    <img src="img/cachorro6.webp" class="card-img-top" alt="...">
+                    <div class="card-body card-animais">
+                        <h5 class="card-title">Lilia</h5>
+                        <p class="card-text">Um anjinho que gosta de ser filha única e muito carinho.</p>
+                        <a href="#" class="btn btn-success">Adotar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
