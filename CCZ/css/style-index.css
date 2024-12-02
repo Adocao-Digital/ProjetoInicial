@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin:0 ;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+   
+  }
+  
+body {
+    background-color: white;
+}
+   
+body::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #f1f0f6;     
+   }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #91c041;   
+    border-radius: 20px;       
+    border: 3px solid #f1f0f6; 
+  }
+
+.slide-button {
+    position: relative;
+    top: -50px;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    margin-top: 5%;
+    height: 390px;
+    width: 100%;
+    justify-content: center;
+    background-color: #FFFBD8;
+    color: #91C041;
+    font-size: 40px;
+}
+
+.box input {
+    z-index: 5;
+}
+.slide2 img {
+    border-radius: 10px;
+    width: max-content;
+    height: 390px;
+}
+
+.slide1 img {
+    width: 50%;
+    height: 390px;
+}
+
+
+/* MUDEEEI */
+.separa {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 110px 0 110px;
+}
+
+/* MUDEEEEEI */
+.caixa1 {
+    background-color: #f1f0f6;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa1 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8%;
+}
+
+a {
+    color: black;
+}
+
+/* Decorações */
+
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
+    background-color: #91C041;
+    border-radius: 10px;
+}
+
+.entrar:hover {
+background-color: #F9B15D;
+}
+
+.slides-list{
+--selected-item: 0;
+--total-items: 3;
+list-style-type: none;
+padding: 0;
+position: relative;
+left: calc(var(--selected-item) * -100%);
+width: calc(var(--total-items) * 100%);
+transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);    
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 1fr;
+}
+
+.slide-show {
+overflow: hidden;
+}
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
