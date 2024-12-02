@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f0f6;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #91c041;
+    border-radius: 20px;
+    border: 3px solid #f1f0f6;
+}
+
+.amarelo {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 237px;
+    background-color: #FFFBD8;
+    left: 0%;
+    top: 110px;
+}
+
+/* Layout principal */
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 5% 10% 0 10%; */
+}   
+
+/* Lado esquerdo - Navegação */
+.left {
+    width: 270px;
+}
+
+.capitulos {
+    height: 400px;
+    width: 270px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 200%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.capitulos a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.capitulos h6 {
+    font-size: 2.0rem;
+    color: #545454;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+.capitulos a:hover h6 {
+    color: #91C041;
+}
+
+.capitulos h3 {
+    display: flex;
+    font-size: 100%;
+    color: #545454;
+    font-weight: lighter;
+}
+
+/* Lado direito - Conteúdo principal */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(100% - 270px - 30px);
+    margin-top: 40px;
+}
+
+.h {
+    margin: 40px;
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #91C041;
+}
+
+/* Imagem fora da parte amarela */
+.foto2 {
+    margin-top: 156px; /* Ajusta o posicionamento da imagem mais para baixo */
+    height: 350px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative; /* Faz a imagem ficar fora da parte amarela */
+}
+
+.foto2 img {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+}
+
+/* Texto */
+.texto {
+    height: 100%;
+    margin-top: 30px;
+}
+
+.texto p {
+    width: 100%;
+    font-size: 120%;
+    color: #545454;
+    font-weight: lighter;
+}
+
+.texto h1 {
+    font-size: 200%;
+    color: #808080;
+}
+
+/* Rodapé */
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: #91C041;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+}
+
+.devs {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.devs img {
+    height: 50px;
+    width: 50px;
+    opacity: 50%;
+    margin-top: 15%;
+}
+
+footer img {
+    width: 100px;
+    height: 120px;
+}
+
+iframe {
+    margin-top: 2%;
+}
+
+/* Decorações - Botões e links */
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
+    background-color: #91C041;
+    border-radius: 10px;
+}
+
+.entrar:hover {
+    background-color: #F9B15D;
+}
+
+@media (max-width: 1400px) {
+    .main {
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+    .foto2 {
+        margin-top: 40px; /* Ajusta a imagem para não sobrepor a parte amarela */
+        height: 300px;
+    }
+
+    .foto2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .capitulos {
+        width: 200px;
+        height: 350px;
+        font-size: 1.5rem;
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        width: 80%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 80%;
+    }
+
+    .foto2 {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    footer .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer img {
+        margin-top: 20px;
+    }
+
+    .capitulos {
+        width: 200px;
+        height: 350px;
+        margin-top: 26px;   
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capitulos {
+        margin-left: 2px;
+        width: 100%;
+        height: 350px;
+        font-size: 1.5rem;
+        margin-top: 26px;
+    }
+
+    .foto2 {
+        height: 250px;
+        margin-top: 20px; /* Ajusta a imagem em telas menores */
+    }
+
+    .foto2 img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,213 +1,172 @@
 * {
     padding: 0;
-    margin:0 ;
+    margin: 0;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
-  }
-
-  body::-webkit-scrollbar {
-    width: 12px;              
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #f1f0f6;     
-   }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #91c041;   
-    border-radius: 20px;       
-    border: 3px solid #f1f0f6; 
-  }
-  a {
-      text-decoration: none;
-  }
-  
-  .ativo {
-      text-decoration: underline;
-  }
-
-
-header {
-    display: flex ;
-    align-items: center;
-    background-color: #91c041;
-    height: 30px;
-    font-size: 10px;
+    font-style: normal; 
+    scroll-behavior: smooth;
 }
 
-.cabeca {
-    display: flex ;
-    color:white;
-    padding-left: 10%;
-}
-.cabeca1{
-    color: white;
+.principal {
+    margin-top: 120px;
+    margin-left: 350px;
     display: flex;
-    padding-left: 3%;
-}
-.cabeca2 {
-   padding-left: 67%;
-    display: flex ;
-    color: white; 
-}
-.header {
-    background-color: #f1f0f6; 
-    height: 101px;
-    display: flex;
-    height: 12%;
-    box-shadow:0px 10px 5px #e4e3e3;
-    margin: 0 auto;
-    position: relative; 
+    flex-direction: column; /* Permite que os elementos fiquem em coluna */
 }
 
-.header img {
-    width: 150px;
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-}
-
-
-.header h2 {
-    color: #545454;
-    text-align:center ;
-}
-
-.hd {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 10px;
-    width: 70%;
-    margin-right: 10%;
-}
-
-.hd2 {
-    display:flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35%;
-}
-
-.botoes {
-    display: flex;
-    width: 40%;
-    justify-content:space-between;
-}
-
-.botao {
-    background-color: #F9B15D;
-    height: 40px;
-    width: 130%;
-    display:  flex;
-    border-radius: 10px;
-    place-items: center;
-    font-size: 15px;
-    margin-top: 1px;
-    justify-content: center;
-    color: white;
-    border: 3px;
-    border-style: solid;
-    border-color:#F9B15D;
-}
-
-
-.doar {
-    background-color: #F9B15D;
-    border: 3px;
-    border-style: solid;
-    border-color:#F9B15D;
-    height: 40px;
-    width: 180%;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
-}
-
-.entrar {
-    border: 3px;
-    border-style: solid;
-    border-color:#91C041;
-    background-color: #f1f0f6;
-    height: 40px;
-    width: 130%;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #91C041;
-    font-size: 15px;
-}
-
-.foto1 {
-    position: relative;
-    display: flex;
-    height: 200px;
-    z-index: -1 ;
-    left: 0;
+/* .amarelo {
+    z-index: -1;
+    max-width: 100%;
+    height: 237px;
     background-color: #FFFBD8;
-}
+    left: 0%;
+    top: 110px;
+} */
 
-.h{
-    font-size: 30px;
-    color: #91C041;
-    padding-left: 30%;
-    padding-top: 100px;
-}
-
-.capitulos {
-    height: 400px;
-    width: 250px;
+.left-mine {
+    border-radius: 8px;
     background-color: white;
-    margin-left: 10%;
-    position: relative;
-    z-index: 1;
-    top: -100px;
-    border-radius: 10px;
-    font-size: 50px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
-    text-align: center;
-}
-
-.foto2 {
-    position: relative;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
     display: flex;
-    height: 350px;
-    width: 60%;
-    background-color: #FFFBD8;
-    z-index: 1;
-    top: -450px;
-    left: 30%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
-    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 280px;
+    margin: 0 auto; /* Centraliza a caixa */
 }
 
-
-.texto h3  {
-    width: 50%;
+.cap a {
     display: flex;
-    position: relative;
-    padding-left:  40%;
-    top: -400px;
-    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    color: #545454;
+    font-weight: lighter;
+    text-decoration: none;
+    width: 100%; /* Ajusta a largura para caber no container */
 }
 
-.texto h1 {
+.principal h1 {
     font-size: 40px;
-    display: flex;
-    position: relative;
-    padding-left:  40%;
-    top: -400px;
+    font-weight: lighter;
+    color: #91C041;
 }
-.rodape {
-    height: 100px;
+
+.foto-canil {
+    margin-top: 55px;
+    height: 350px;
     width: 100%;
-    background-color: #91C041;
-    color: white;
-    font-size: 24px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Media query para dispositivos móveis (celulares) */
+@media screen and (max-width: 577px) {
+    .principal {
+        margin-left: 10px; /* Ajusta a margem para telas pequenas */
+        margin-top: 80px;
+    }
+
+    .left-mine {
+        width: 90%; /* Ajusta a largura da caixa para 90% da largura da tela */
+        max-width: 280px; /* Limita a largura máxima para não esticar demais */
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+        height: 350px; /* Ajusta a altura automaticamente */
+        padding: 15px; /* Adiciona um pouco de padding para espaçamento interno */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 8px;
+        order: -1; /* Coloca a caixa antes do texto */
+    }
+
+    .foto-canil {
+        height: 120px; /* Ajusta a altura da imagem para dispositivos móveis */
+        max-width: 300px; /* Garante que a imagem não ultrapasse a largura da tela */
+        border-radius: 20px;
+    }
+
+    .principal h1 {
+        font-size: 30px;
+        margin-top: 20px; /* Ajusta a margem do título */
+    }
+
+    .cap {
+        font-size: 10px;
+    }
+}
+
+/* Media query para tablets (largura entre 481px e 768px) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .principal {
+        margin-left: 20px; /* Ajusta a margem para telas de tablets */
+        margin-top: 100px;
+    }
+
+    .left-mine {
+        width: 250%; /* Ajusta a largura da caixa para 75% */
+        font-size: 50%;
+        height: 350px;
+        margin-left: -20px;
+    }
+
+    .foto-canil {
+        height: auto; /* Ajusta a altura da imagem */
+    }
+
+    .principal h1 {
+        font-size: 32px;
+        margin-top: 40px; /* Ajusta a margem do título */
+    }
+}
+
+/* Media query para monitores menores (largura entre 769px e 1024px) */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .principal {
+        margin-left: 100px; /* Ajusta a margem para monitores menores */
+        margin-top: 120px; /* Aumenta o espaço superior */
+    }
+
+    .left-mine {
+        font-size: 70%;
+        width: 120%; /* Ajusta a largura para 65% */
+        height: 350px;
+    }
+
+    .foto-canil {
+        height: auto; /* Ajusta a altura da imagem */
+    }
+
+    .principal h1 {
+        font-size: 36px;
+        margin-top: 30px;  
+        
+    }
+}
+
+/* Media query para monitores grandes (acima de 1024px) */
+@media screen and (min-width: 1025px) {
+    .principal {
+        margin-left: 150px;
+        margin-top: 120px;
+    }
+
+    .left-mine {
+        width: 150%; /* Mantém a largura original */
+        height: 350px;
+        font-size: 70%;
+    }
+
+    .foto-canil {
+        margin-top: 55px;
+        height: 350px;
+        width: 100%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+    .principal h1 {
+        font-size: 40px;
+    }
 }

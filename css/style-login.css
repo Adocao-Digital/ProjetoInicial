@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin:0 ;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f0f6;     
+   }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #91c041;   
+    border-radius: 20px;       
+    border: 3px solid #f1f0f6; 
+  }
+
+body{
+    background-color: #FFFBD8;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+
+.conteudo-login{
+    width:max-content;
+    /* height: max-content; */
+    margin-top: 5%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+legend{
+    background-color: black;
+    color: #545454;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 28px;
+    height: 60px; 
+    font-family: 'Mulish', sans-serif;
+}
+
+h1{
+    color: #545454;
+    font-size: 48px;
+    text-align: center;
+    border-radius: 28px;
+    height: 60px; 
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+
+.controle {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5%;
+    margin-right: 20px;
+    width: 80%;
+}
+
+.controle-login {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.bxlogin{
+    /* box-sizing: border-box; */
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B0E850;
+    border: 2px solid #6A8D2E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.bxlogin:hover {
+    background: #91C041;
+    cursor: pointer;
+}
+
+.bxlogin:active {
+    background: #6A8D2E;
+}
+
+.login {
+    width: 500px;
+}
+
+.bx{
+    position: relative;
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    margin-left: 8%;
+    margin-top: 8px;
+    background: rgba(255, 191, 119, 0.5);
+    border: 2px solid #F9B15D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.mostrar-senha {
+    position: absolute;
+    right: -30px;
+    top: 55%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mostrar-senha img {
+    width: 30px;
+}
+
+input {
+    padding: 5%;
+}
+
+.img-person{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    /* border: 1px solid #F1F0F6; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 100px;
+}
+
+.img-lock{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    /* border: 1px solid #F1F0F6; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 100px; */
+}
+
+p{
+    color: #4999C7;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 8%;
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#reg {
+    color: #4999C7;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+}
+
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: #91C041;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.esquerda h5 {
+    font-size: large;
+}
+
+.esquerda h6 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.devs {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.devs img {
+    height: 50px;
+    width: 50px;
+    opacity: 50%;
+    margin-top: 15%;
+}
+
+footer img {
+    width: 100px;
+    height: 120px;
+}
+
+/* Decorações */
+
+.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
+    background-color: #91C041;
+    border-radius: 10px;
+}
+
+.entrar:hover {
+background-color: #F9B15D;
+}
