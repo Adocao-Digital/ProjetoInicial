@@ -1,3 +1,7 @@
+<?php
+	if(!isset($_SESSION))
+		session_start();
+ ?>
 <header>
     <div class="head2">
     </div>
@@ -26,11 +30,24 @@
         <li class="nav-item">
           <a class="nav-link" href="/ccz/fale">Fale conosco</a>
         </li>
+        <?php
+        if(isset($_SESSION['email']) && $_SESSION['perfil'] == 'Funcionario'){
+          echo "<li class='nav-item'>
+                  <a class='nav-link' href='/ccz/dashboard'>Painel de Controle</a>
+                </li>";
+        }
+        ?>
       </ul>
       <div class="container">
         <a class="btn btn-success" href="/ccz/adotar">Quero adotar</a>
         <a class="btn btn-success" href="/ccz/ajudar">Ajudar</a>
-        <a class="btn btn-success" href="/ccz/login">Entrar</a>
+        <?php
+        if(isset($_SESSION['email'])){
+          echo "<a class='btn btn-success' href='/ccz/logout'>Sair</a>";
+         }else{
+          echo "<a class='btn btn-success' href='/ccz/login'>Entrar</a>";
+        }
+        ?>
       </div>
     </div>
   </div>

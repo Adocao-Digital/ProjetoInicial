@@ -1,5 +1,5 @@
 <?php
-class adotarcontroller
+class AdotarController
 {
     public function tela()
     {

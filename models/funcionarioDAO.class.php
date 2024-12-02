@@ -1,5 +1,5 @@
 <?php
-    class funcionarioDAO extends Conexao {
+    class FuncionarioDAO extends Conexao {
         public function __construcut(){
             parent::__construct();
         }

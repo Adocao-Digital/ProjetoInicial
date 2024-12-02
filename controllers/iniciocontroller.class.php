@@ -1,5 +1,5 @@
 <?php
-	class iniciocontroller
+	class InicioController
 	{
 		public function inicio()
 		{

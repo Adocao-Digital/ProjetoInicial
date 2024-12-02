@@ -1,5 +1,5 @@
 <?php
-class cadastropetcontroller
+class CadastropetController
 {
     public function cadastropet()
     {

@@ -1,5 +1,5 @@
 <?php
-class ajudarcontroller
+class AjudarController
 {
     public function tela()
     {

@@ -19,46 +19,54 @@
 <body>
     <!-- Início do cabeçalho -->
     <?php
-        require_once 'header.html';
+        require_once 'header.php';
     ?>
     <!-- Fim do cabeçalho -->
     <div class="caixa-total">
 
 
         <div class="caixa-direita">
-            <div class="form">
-                <h1>Registrar-se</h1>
-                <label for="inome" class="padding">Nome completo:
-                    <input type="text" id="itext" class="estilo-forms" placeholder="Digite seu nome completo..." required>
-                </label>
-                <label for="iemail">E-mail:
-                    <input type="text" id="iemail" class="estilo-forms" placeholder="Digite seu e-mail..." required>
-                </label>
-                <label for="itelefone">Telefone:
-                    <input type="text" id="itelefone" class="estilo-forms" placeholder="Digite seu telefone..." required>
-                </label>
-                <label for="isexo">Sexo:
-                    <select name="select" required class="sexoform">
-                        <option value="valor1"  disabled selected >Selecione...</option>
-                        <option value="valor2">Masculino</option>
-                        <option value="valor3">Feminino</option>
-                        <option value="valor4">Não-binário</option>
-                        <option value="valor5">Prefiro não informar</option>
-                    </select>
-                </label>
-                <label for="idatanascimento">Selecione sua data de nascimento:<br>
-                    <input type="date" id="idatanascimento" class="estilo-forms" required>
-                </label> 
-                <label for="ipassword">Digite sua senha:
-                    <input type="password" id="ipassword" class="estilo-forms" placeholder="Digite sua senha..." required>
-                </label>
-                <label for="iconfirm">Confirme sua senha:
-                    <input type="password" id="iconfirm" class="estilo-forms" placeholder="Confirme sua senha..." required>
-                </label>
-                <div class="cad">
-                    <button type="submit">Cadastrar</button>
+            <form action="/ccz/cadastro" method="post">
+                <div class="form">
+                    <h1>Registrar-se</h1>
+                    <label for="nome" class="padding">Nome:
+                        <input type="text" id="nome" name="nome" class="estilo-forms" placeholder="Digite seu nome..." required>
+                    </label>
+                    <label for="nome" class="padding">Sobrenome:
+                        <input type="text" id="nome" name="sobrenome" class="estilo-forms" placeholder="Digite seu sobrenome..." required>
+                    </label>
+                    <label for="cpf">CPF:
+                        <input type="text" id="cpf" name="cpf" class="estilo-forms" placeholder="Digite seu CPF..." required>
+                    </label>
+                    <label for="email">E-mail:
+                        <input type="text" id="email" name ="email" class="estilo-forms" placeholder="Digite seu e-mail..." required>
+                    </label>
+                    <label for="senha">Digite sua senha:
+                        <input type="password" name="senha" id="senha" class="estilo-forms" placeholder="Digite sua senha..." required>
+                    </label>
+                    <label for="confirma">Confirme sua senha:
+                        <input type="password" id="confirma" name="confirma" class="estilo-forms" placeholder="Confirme sua senha..." required>
+                    </label>
+                    <label for="telefone">Telefone:
+                        <input type="text" id="telefone" name="telefone" class="estilo-forms" pattern="\d{10,11}" placeholder="Digite seu telefone..." required>
+                    </label>
+                    <label for="sexo">Sexo:
+                        <select name="sexo" required class="sexoform">
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Não-binário">Não-binário</option>
+                            <option value="NULL">Prefiro não informar</option>
+                        </select>
+                    </label>
+                    <label for="datanasc">Selecione sua data de nascimento:<br>
+                        <input type="date" name="datanasc" id="datanasc" class="estilo-forms" required>
+                    </label> 
+                    <div class="cad">
+                        <button type="submit">Cadastrar</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="caixa-esquerda">
             <div class="titulo-cadastro">

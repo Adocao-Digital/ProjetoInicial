@@ -1,5 +1,5 @@
 <?php
-class falecontroller
+class FaleController
 {
     public function tela()
     {

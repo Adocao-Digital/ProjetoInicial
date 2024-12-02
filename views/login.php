@@ -13,34 +13,42 @@
 <body>
     <!-- Início do cabeçalho -->
     <?php
-        require_once 'header.html';
+        require_once 'header.php';
     ?>
     <!-- Fim do cabeçalho -->
     <main>
         <div class="conteudo-login">
             <div class="login">
                 <h1>Fazer Login</h1>
-                <form class="formulario">
+                <form class="formulario" action="/ccz/login" method="POST">
+                    <?php
+                        if($mensagem != "")
+                        {
+                            echo "<div class='alert alert-danger' role='alert'>
+                                    $mensagem
+                                </div>";
+                
+                        }
+                    ?>
                     <div class="controle">
-                        <img class="img-person" src="img/usuario.png" alt="Ícone de usuário">
-                        <input class="bx" type="text" id="usuario" placeholder="Digite seu e-mail..." required>
+                        <label for="email"><img class="img-person" src="img/usuario.png" alt="Ícone de usuário"></label>
+                        <input class="bx" type="text" name="email" id="email" placeholder="Digite seu e-mail...">
                     </div>
+                    <div style="color:red;font-size:10px;"><?php echo $msg[0];?></div>
                     <div class="controle">
-                        <img class="img-lock" src="img/senha.png" alt="Ícone de senha">
-                        <input class="bx" type="password" id="senha" placeholder="Digite sua senha..." required>
+                        <label for="senha"><img class="img-lock" src="img/senha.png" alt="Ícone de senha"></label>
+                        <input class="bx" type="password" name="senha" id="senha" placeholder="Digite sua senha...">
                         <button type="button" class="mostrar-senha" onclick="toggleSenha()">
                             <img src="img/closed-eye.png" alt="Mostrar/Esconder senha" id="imgSenha">
                         </button>
                     </div>
-                    <div class="controle-login">
-                        <button class="bxlogin" type="submit">Login</button>
-                    </div>
+                    <div style="color:red;font-size:10px;"><?php echo $msg[1];?></div>
+                    <input class="controle-login bxlogin" type="submit" value="Login">
                 </form>
-                <p class="parag">Esqueci minha senha</p>
+                <a href="#" class="parag">Esqueci minha senha</a>
                 <a href="/ccz/cadastro" class="registro-link">Registrar</a>
             </div>
         </div>
-
     </main>
     <footer>
         <?php

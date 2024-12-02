@@ -1,5 +1,5 @@
 <?php
-	require_once "rotas.php";
+	require_once "Rotas.php";
 	
 	//autoload das classes
 	spl_autoload_register(function($class)

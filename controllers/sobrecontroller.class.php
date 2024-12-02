@@ -1,5 +1,5 @@
 <?php
-class sobrecontroller
+class SobreController
 {
     public function tela()
     {

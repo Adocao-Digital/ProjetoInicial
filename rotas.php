@@ -27,12 +27,16 @@
 	}//fim da classe
 	//instanciar um objeto classe Rotas
 	$route = new Rotas();
-	$route->get("/",[iniciocontroller::class,"inicio"]);
-	$route->get("/index.php",[iniciocontroller::class,"inicio"]);
-	$route->get("/adotar",[adotarcontroller::class,"tela"]);
-	$route->get("/sobre",[sobrecontroller::class,"tela"]);
-	$route->get("/fale",[falecontroller::class,"tela"]);
-	$route->get("/ajudar",[ajudarcontroller::class,"tela"]);
-	$route->get("/cadastro-pet",[cadastropetcontroller::class,"cadastropet"]);
-    $route->get("/cadastro", [cadastrocontroller::class, "cadastro"]);
-    $route->get("/login", [logincontroller::class, "login"]);
+	$route->get("/",[InicioController::class,"inicio"]);
+	$route->get("/adotar",[AdotarController::class,"tela"]);
+	$route->get("/sobre",[SobreController::class,"tela"]);
+	$route->get("/fale",[FaleController::class,"tela"]);
+	$route->get("/ajudar",[AjudarController::class,"tela"]);
+	$route->get("/cadastro-pet",[CadastropetController::class,"cadastropet"]);
+    $route->get("/cadastro", [UsuarioController::class, "cadastro"]);
+    $route->post("/cadastro", [UsuarioController::class, "cadastro"]);
+    $route->get("/login", [UsuarioController::class, "login"]);
+    $route->post("/login", [UsuarioController::class, "login"]);
+    $route->get("/logout", [UsuarioController::class, "logout"]);
+	$route->get("/dashboard", [DashboardController::class, "tela"]);
+?>

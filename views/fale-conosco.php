@@ -17,7 +17,7 @@
 <body>
     <!-- Início do cabeçalho -->
     <?php
-        require_once 'header.html';
+        require_once 'header.php';
     ?>
     <!-- Fim do cabeçalho -->
     <div class="fale"><h1>Seja Bem-Vindo Ao Fale Conosco</h1></div>

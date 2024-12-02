@@ -1,14 +1,16 @@
 <?php
     class Pessoa {
         public function __construct(
-            private int $id = 0,
-            private string $nome = '',
-            private string $sobrenome = '',
-            private string $cpf = '',
-            private string $email = '',
-            private string $senha = '',
-            private string $telefone = '',
-            private string $perfil = ''
+            protected int $id = 0,
+            protected string $nome = '',
+            protected string $sobrenome = '',
+            protected string $cpf = '',
+            protected string $datanasc = '',
+            protected string $sexo='',
+            protected string $email = '',
+            protected string $senha = '',
+            protected string $telefone = '',
+            protected string $perfil = ''
         ){}
 
         public function getId(){
@@ -41,6 +43,22 @@
 
         public function setCpf($cpf){
            $this->cpf = $cpf;
+        }
+
+        public function getDatanasc(){
+            return $this->datanasc;
+        }
+
+        public function setDatanasc($datanasc){
+           $this->datanasc = $datanasc;
+        }
+
+        public function getSexo(){
+            return $this->sexo;
+        }
+
+        public function setSexo($sexo){
+           $this->sexo = $sexo;
         }
 
         public function getEmail(){
