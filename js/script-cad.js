@@ -23,3 +23,29 @@ function toggleSenha2() {
         imgSenhaConfirm.alt = "Olho Fechado";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const senha = document.getElementById('senha');
+    const confirma = document.getElementById('confirma');
+    const escrita = document.getElementById('escrita');
+    const form = document.querySelector('form');
+
+    form.onsubmit = function (event) {
+        // Limpar estilos e mensagens anteriores
+        senha.classList.remove('input-erro');
+        confirma.classList.remove('input-erro');
+        escrita.textContent = '';
+
+        // Verificar se as senhas coincidem
+        if (senha.value !== confirma.value) {
+            event.preventDefault(); // Impede o envio do formulário
+            escrita.textContent = 'As senhas não coincidem!';
+            
+            // Destacar o campo com a senha incorreta
+            if (!senha.value || senha.value !== confirma.value) {
+                senha.classList.add('input-erro');
+            }
+            confirma.classList.add('input-erro');
+        }
+    };
+});

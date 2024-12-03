@@ -1,137 +1,41 @@
 * {
     padding: 0;
-    margin:0 ;
+    margin: 0;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
-    scroll-behavior: smooth;   
-  }
-  
-body {
-    background-color: white;
-}
-   
-  body::-webkit-scrollbar {
-    width: 12px;              
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #f1f0f6;     
-   }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #91c041;   
-    border-radius: 20px;       
-    border: 3px solid #f1f0f6; 
-  }
-
-.amarelo {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 237px;
-    background-color: #FFFBD8;
-    left: 0%;
-    top: 110px;
+    font-style: normal; 
+    scroll-behavior: smooth;
 }
 
-.main {
+.principal {
+    margin-top: 120px;
+    margin-left: 9%;
+    margin-right: 9%;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 5% 10% 0 10%;
+    flex-direction: column;
 }
 
-.left {
-    width: 25%;
-}
-
-.capitulos {
-    height: 400px;
-    width: 270px;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 200%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25) ;
+.cap a {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.capitulos h3 {
-
-    display: flex;
-    font-size: 100%;
+    justify-content: center;
+    font-size: 300%;
     color: #545454;
     font-weight: lighter;
+    text-decoration: none;
+    width: 100%;
 }
 
-
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    margin-top: 40px;
-}
-
-.h{
+.principal h1 {
     font-size: 40px;
     font-weight: lighter;
     color: #91C041;
 }
 
-.foto2 {
-    margin-top: 38px;
+.foto-canil {
+    margin-top: 55px;
     height: 350px;
     width: 100%;
     z-index: 1;
-    border-radius: 10px;
-}
-
-.foto2 img {
-    width: 100%;
-    height: max-content;
-    border-radius: 10px;
-}
-
-.cap {
-    height:110px;
-    display: flex;
-    align-items: center;
-}
-
-.texto {
-    height: 100%;
-    margin-top: 30px;
-}
-
-.texto p  {
-    width: 100%;
-    font-size: 120%;
-    color:#545454;
-    font-weight: lighter;
-}
-
-.texto h1 {
-    font-size: 200%;
-    color:#808080;
-}
-
-iframe {
-    margin-top: 2%;
-
-}
-
-/* Decorações */
-
-.home1:hover, .home2:hover, .home3:hover, .ajudar:hover, .botao:hover {
-    background-color: #91C041;
-    border-radius: 10px;
-}
-
-.entrar:hover {
-background-color: #F9B15D;
+    border-radius: 20px;
 }
