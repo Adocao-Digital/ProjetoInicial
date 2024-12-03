@@ -1,3 +1,9 @@
+<?php
+    if(isset($_SESSION['nome']))
+    {
+        header("Location: /ccz/");
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,7 +39,7 @@
                         <input type="text" id="nome" name="nome" class="estilo-forms" placeholder="Digite seu nome..." required>
                     </label>
                     <label for="nome" class="padding">Sobrenome:
-                        <input type="text" id="nome" name="sobrenome" class="estilo-forms" placeholder="Digite seu sobrenome..." required>
+                        <input type="text" id="sobrenome" name="sobrenome" class="estilo-forms" placeholder="Digite seu sobrenome..." required>
                     </label>
                     <label for="cpf">CPF:
                         <input type="text" id="cpf" name="cpf" class="estilo-forms" placeholder="Digite seu CPF..." required>
@@ -46,6 +52,7 @@
                     </label>
                     <label for="confirma">Confirme sua senha:
                         <input type="password" id="confirma" name="confirma" class="estilo-forms" placeholder="Confirme sua senha..." required>
+                        <span id="escrita" class="error"></span>
                     </label>
                     <label for="telefone">Telefone:
                         <input type="text" id="telefone" name="telefone" class="estilo-forms" pattern="\d{10,11}" placeholder="Digite seu telefone..." required>
@@ -89,5 +96,4 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="js/form.js" defer></script>
 </html>

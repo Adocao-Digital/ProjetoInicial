@@ -39,4 +39,5 @@
     $route->post("/login", [UsuarioController::class, "login"]);
     $route->get("/logout", [UsuarioController::class, "logout"]);
 	$route->get("/dashboard", [DashboardController::class, "tela"]);
+	$route->get("/dashboard/publicacao", [PublicacaoController::class, "tela"]);
 ?>

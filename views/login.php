@@ -1,3 +1,9 @@
+<?php
+    if(isset($_SESSION['nome']))
+    {
+        header("Location: /ccz/");
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

@@ -122,7 +122,10 @@ class UsuarioController
                         $_SESSION["sobrenome"] = $retorno[0]->sobrenome_usuario;
                         $_SESSION["perfil"] = $retorno[0]->perfil;
 						$_SESSION["email"] = $retorno[0]->email_usuario;
-                        header("location:/ccz/");
+						$redirectTo = $_SESSION['redirect_to'] ?? '/ccz/';
+						unset($_SESSION['redirect_to']);
+						header("Location: $redirectTo");
+						exit;
                         die();
                     }
                 }

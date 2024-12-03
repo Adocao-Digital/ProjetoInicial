@@ -7,7 +7,7 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-xl bg-body-tertiary">
   <div class="container-fluid">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -38,14 +38,14 @@
         }
         ?>
       </ul>
-      <div class="container">
-        <a class="btn btn-success" href="/ccz/adotar">Quero adotar</a>
-        <a class="btn btn-success" href="/ccz/ajudar">Ajudar</a>
+      <div class="container c-button">
+        <a type="button" href="/ccz/adotar" class="btn btn-success max-width">Quero adotar</a>
+        <a type="button" href="/ccz/ajudar" class="btn btn-success max-width">Ajudar</a>
         <?php
         if(isset($_SESSION['email'])){
-          echo "<a class='btn btn-success' href='/ccz/logout'>Sair</a>";
+          echo "<a type='button' href='/ccz/logout' class='btn btn-success max-width'>Sair</a>";
          }else{
-          echo "<a class='btn btn-success' href='/ccz/login'>Entrar</a>";
+          echo "<a type='button' href='/ccz/login' class='btn btn-success max-width'>Entrar</a>";
         }
         ?>
       </div>

@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+// Verifica se o usuário está autenticado
+if (!isset($_SESSION['nome'])) {
+    // Salva a URL da página atual na sessão
+    $_SESSION['redirect_to'] = $_SERVER['REQUEST_URI'];
+    // Redireciona para a página de login
+    header("Location: /ccz/login");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
