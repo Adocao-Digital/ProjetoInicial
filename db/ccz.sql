@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20/11/2024 às 21:59
+-- Tempo de geração: 03/12/2024 às 05:10
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `ccz`
 --
+CREATE DATABASE IF NOT EXISTS `ccz` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `ccz`;
 
 -- --------------------------------------------------------
 
@@ -35,7 +37,8 @@ CREATE TABLE `funcionarios` (
   `cpf_funcionario` varchar(14) NOT NULL,
   `email_fnucionario` varchar(100) NOT NULL,
   `senha_funcionario` varchar(100) NOT NULL,
-  `telefone_funcionario` varchar(11) NOT NULL
+  `telefone_funcionario` varchar(11) NOT NULL,
+  `perfil` enum('Usuario','Funcionario') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -47,13 +50,26 @@ CREATE TABLE `funcionarios` (
 CREATE TABLE `petadocao` (
   `id_petAdocao` int(11) NOT NULL,
   `nome_petAdocao` varchar(20) NOT NULL,
+  `foto_petAdocao` varchar(255) NOT NULL,
   `descricao_petAdocao` varchar(500) NOT NULL,
-  `status_petAdocao` tinyint(1) NOT NULL,
-  `especie_petAdocao` varchar(15) NOT NULL,
-  `idade_petAdocao` varchar(2) NOT NULL,
-  `porte_petAdocao` varchar(8) NOT NULL,
-  `sexo_petAdocao` varchar(10) NOT NULL
+  `status_petAdocao` enum('Disponível','Indisponível') NOT NULL,
+  `especie_petAdocao` enum('Cachorro','Gato') NOT NULL,
+  `idade_petAdocao` enum('Filhote','Adulto','Idoso') NOT NULL,
+  `porte_petAdocao` enum('Pequeno','Médio','Grande') NOT NULL,
+  `sexo_petAdocao` enum('Macho','Fêmea') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `petadocao`
+--
+
+INSERT INTO `petadocao` (`id_petAdocao`, `nome_petAdocao`, `foto_petAdocao`, `descricao_petAdocao`, `status_petAdocao`, `especie_petAdocao`, `idade_petAdocao`, `porte_petAdocao`, `sexo_petAdocao`) VALUES
+(1, 'Amora', 'img/cachorro1.webp', 'Dócil e muito amigável, gosta de brincar e se da bem com gatos.', 'Disponível', 'Cachorro', 'Adulto', 'Médio', 'Macho'),
+(2, 'Bruce', 'img/cachorro2.webp', 'Dócil e muito amigável, gosta de brincar e se da bem com gatos.', 'Disponível', 'Cachorro', 'Adulto', 'Médio', 'Macho'),
+(3, 'Chiquinha', 'img/cachorro3.webp', 'Filhote muito doce, provável porte médio para grande.', 'Disponível', 'Cachorro', 'Filhote', 'Grande', 'Fêmea'),
+(4, 'Zéquinha', 'img/cachorro4.webp', 'Está a algum tempo sem família e sonha muito com um lar amoroso.', 'Disponível', 'Cachorro', 'Adulto', 'Médio', 'Macho'),
+(5, 'Toninho Rodrigues', 'img/cachorro5.webp', 'Porte médio e brincalhão, gosta de outros cachorros.', 'Disponível', 'Cachorro', 'Adulto', 'Médio', 'Macho'),
+(6, 'Lilia', 'img/cachorro6.webp', 'Um anjinho que gosta de ser filha única e muito carinho.', 'Disponível', 'Cachorro', 'Adulto', 'Médio', 'Fêmea');
 
 -- --------------------------------------------------------
 
@@ -64,11 +80,11 @@ CREATE TABLE `petadocao` (
 CREATE TABLE `petusuario` (
   `id_petUsuario` int(11) NOT NULL,
   `nome_petUsuario` varchar(20) NOT NULL,
-  `fk_id_usuarios` int(11) NOT NULL,
   `especie_petUsuario` varchar(15) NOT NULL,
   `idade_petUsuario` varchar(2) NOT NULL,
   `porte_petUsuario` varchar(8) NOT NULL,
-  `sexo_petUsuario` varchar(10) NOT NULL
+  `sexo_petUsuario` varchar(10) NOT NULL,
+  `peso_petUsuario` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -96,11 +112,34 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nome_usuario` varchar(20) NOT NULL,
   `sobrenome_usuario` varchar(100) NOT NULL,
+  `datanasc_usuario` date NOT NULL,
   `cpf_usuario` varchar(14) NOT NULL,
+  `sexo` varchar(16) NOT NULL,
   `email_usuario` varchar(100) NOT NULL,
   `senha_usuario` varchar(100) NOT NULL,
   `telefone_usuario` varchar(100) NOT NULL,
-  `fk_id_petusuario` int(11) NOT NULL
+  `perfil` enum('Usuario','Funcionario') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nome_usuario`, `sobrenome_usuario`, `datanasc_usuario`, `cpf_usuario`, `sexo`, `email_usuario`, `senha_usuario`, `telefone_usuario`, `perfil`) VALUES
+(1, 'JHONATAN', 'DE JESUS', '1998-04-29', '031.988.079-64', 'Masculino', 'asdasd@aosidjasdoj', '$2y$10$xjPuCTN6SuOQQsBUovoko.J.n6t5y5zpYWwKhWFbvCffqXGRbRusO', '43984446926', 'Usuario'),
+(2, 'JHONATAN', 'DE JESUS', '1998-04-29', '45349893858', 'Masculino', 'zombegamer@hotmail.com', '$2y$10$3Vd02Ddw2dbtheA/.frd6uPmk.Pu4T8bCk2yBOEY18wDZqCZHNZeC', '43984446926', 'Usuario'),
+(5, 'JHONATAN', 'DE JESUS', '1998-04-29', '11122244488', 'Masculino', 'jhonatanjau98@gmail.com', '$2y$10$xQchC9hbOBsG7KsFblzsZ.zb5r5rFjHRQRSwiYIiefWxtiugPlN2K', '43984446926', 'Funcionario'),
+(7, 'JHONATAN', 'DE JESUS', '1221-12-12', '453 . 498 . 93', 'Masculino', '1231@hotmasil', '$2y$10$rhF6ZgLxvMLCCgZT4Quinuuj7XvDetQC3K8UuycnDgYKdcGY2zQrm', '43984446926', 'Usuario');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario_pets`
+--
+
+CREATE TABLE `usuario_pets` (
+  `id_usuario` int(11) NOT NULL,
+  `id_petUsuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -127,8 +166,7 @@ ALTER TABLE `petadocao`
 -- Índices de tabela `petusuario`
 --
 ALTER TABLE `petusuario`
-  ADD PRIMARY KEY (`id_petUsuario`),
-  ADD KEY `fk_id_usuarios` (`fk_id_usuarios`);
+  ADD PRIMARY KEY (`id_petUsuario`);
 
 --
 -- Índices de tabela `publicacoes`
@@ -144,8 +182,14 @@ ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`),
   ADD UNIQUE KEY `UNIQUE` (`email_usuario`),
   ADD UNIQUE KEY `email_unico` (`email_usuario`),
-  ADD UNIQUE KEY `cpf_usuario` (`cpf_usuario`),
-  ADD KEY `fk_id_petusuario` (`fk_id_petusuario`);
+  ADD UNIQUE KEY `cpf_usuario` (`cpf_usuario`);
+
+--
+-- Índices de tabela `usuario_pets`
+--
+ALTER TABLE `usuario_pets`
+  ADD KEY `id_petUsuario` (`id_petUsuario`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -161,7 +205,7 @@ ALTER TABLE `funcionarios`
 -- AUTO_INCREMENT de tabela `petadocao`
 --
 ALTER TABLE `petadocao`
-  MODIFY `id_petAdocao` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_petAdocao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `petusuario`
@@ -179,17 +223,11 @@ ALTER TABLE `publicacoes`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restrições para tabelas despejadas
 --
-
---
--- Restrições para tabelas `petusuario`
---
-ALTER TABLE `petusuario`
-  ADD CONSTRAINT `petusuario_ibfk_1` FOREIGN KEY (`fk_id_usuarios`) REFERENCES `usuarios` (`id_usuario`);
 
 --
 -- Restrições para tabelas `publicacoes`
@@ -198,10 +236,11 @@ ALTER TABLE `publicacoes`
   ADD CONSTRAINT `publicacoes_ibfk_1` FOREIGN KEY (`fk_id_funcionario`) REFERENCES `funcionarios` (`id_funcionario`);
 
 --
--- Restrições para tabelas `usuarios`
+-- Restrições para tabelas `usuario_pets`
 --
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`fk_id_petusuario`) REFERENCES `petusuario` (`id_petUsuario`);
+ALTER TABLE `usuario_pets`
+  ADD CONSTRAINT `usuario_pets_ibfk_1` FOREIGN KEY (`id_petUsuario`) REFERENCES `petusuario` (`id_petUsuario`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  ADD CONSTRAINT `usuario_pets_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
